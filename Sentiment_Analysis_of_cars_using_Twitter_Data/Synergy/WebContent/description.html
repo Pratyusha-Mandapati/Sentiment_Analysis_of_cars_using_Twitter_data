@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Index Page</title>
+     <link type="text/css" href="style.css" />
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="firstpage.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+     
+ </head>
+<style>
+body {
+    margin-top: 100px;
+    background-color: #222;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+.col-lg-12>h1.page-header {
+	padding:70px;
+	
+}
+#wrapper {
+    padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+</style>
+ <body>
+ 	
+     <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SYNERGY</a>
+            </div>
+            <!-- Top Menu Items -->
+                      
+        
+          
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="description.html">Project Description</a>
+                     </li>
+                     <li><a href="datasets.html">Data Sets</a></li>
+                     <li><a href="algorithms.html">Algorithms</a></li>
+                     <li><a href="charts.html">Charts</a></li>                     
+                     <li><a href="wordcloud.html">Word Cloud</a></li>
+                   </ul>
+                  </div>
+                  </nav>
+
+		<div id="page-wrapper">
+		
+		            <div class="container-fluid">
+		
+		                <!-- Page Heading -->
+		                <div class="row">
+		                    <div class="col-lg-12">
+		                    	<center><h1>SENTIMENT ANALYSIS OF CARS USING TWITTER DATA</h1></center>
+		                        <h1 class="page-header">
+		                          Project Description
+		                        </h1>
+		                        <ol class="breadcrumb">
+		                            <li class="active" style="color:#000000;font-size:18px;font-weight:bold;">
+		                               Project Purpose
+		                            </li>
+		                        </ol>
+		                     </div>
+		                </div>
+		            <div class="row">
+                    <div class="col-lg-12">
+                    	<p><b>1.</b> The purpose of the project is to analyze the sentiments of the users on different cars using Twitter data. <br><br>
+                           <b>2.</b> Different car models are queried on the internet and the data related to them is retrieved in the form of Tweets through Twitter Search API.<br><br> 
+                           <b>3.</b> The retrieved tweets are then analyzed and the classification algorithms are run on the data and the sentiment is then pulled out from the data.
+                        </p>
+                    </div>
+               </div><br>
+                   <div class="row">
+                    <div class="col-lg-12">
+                    	<ol class="breadcrumb">
+		                            <li class="active" style="color:#000000;font-size:18px;font-weight:bold;">
+		                               Project Flow
+		                            </li>
+		                        </ol>
+                        <p><b>1. Collection of Tweets:</b> The authentication and extraction of tweets is done by using Java.<br>
+                        <b>2. Data Cleansing and Transformation: </b>The next step is to cleanse the received tweets. R queries are used to filter and cleanse the data.<br>
+                        <b>3. Mining and Processing using R:</b> The cleansed tweets are then directly processed in R to project the final sentiment score graphically. The histograms, bar charts and word cloud are used to present the sentiment for each car model.<br> 
+                        <b>4. Visualization:</b> To present the overall sentiment for various car models, dashboard is used.
+                         <br><br> A comparative analysis is done for each car model.
+                         <br><br> The overall system is scalable i.e., as the user input in terms of tweets is increased, the system generates results and behaves accordingly.
+                         </p>
+					</div>
+					</div><br>
+					<div class="row">
+                    <div class="col-lg-12">
+                    	<ol class="breadcrumb">
+		                            <li class="active" style="color:#000000;font-size:18px;font-weight:bold;">
+		                               Data Tools
+		                            </li>
+		                        </ol>
+		               <p>
+		               	<b>1. R Programming Language:</b> This language is used for statistical programming. It has pre compiled binary versions provided for each machine.<br>
+                        <b>2. R Studio:</b> It is a free and open source interface for R. It provides multiple platforms. For our project, we have used R Studio desktop where we run the program locally on our machines.<br>
+                        <b>3. Mongo DB:</b> Mongo db is a noSQL database. It is a document database that provides high performance, high availability and easy scalability. It stores its data in files and uses memory mapped files for data management and efficiency. This project uses mongo DB as the data store to store all the real time tweets and posts. Monog DB can also be configured for data replication which serves a major purpose in maintaining consistency of data.<br>
+                        <b>4. Shiny: </b>Shiny is a web framework and R has package named Shiny. Shiny integrates the statistical and computational features of R well with the modern web. Shiny enables interactive web applications by processing and analyzing the parameters that are user friendly capabilities. It also offers a wide range of outputs such as tables, plots etc.
+		               </p>  
+		               </div>
+		               </div>       
+                    	
+		    </div>
+		</div>  
+		</div>          
+
+
+</body>
+</html>
